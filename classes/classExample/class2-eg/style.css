@@ -1,0 +1,9 @@
+/* Comment */
+
+nav ol {
+	list-style-type: lower-alpha;
+}
+
+nav ul {
+	list-style-type: none;
+}

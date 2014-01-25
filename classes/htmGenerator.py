@@ -24,6 +24,7 @@ htmlHeader = '''
         <menu>
             <!-- FOR CLASS SUMMARY LINKS -->
             <ul>
+                <li><a href="class-03.html">Class 3: Jan 28</a></li>
                 <li><a href="class-02.html">Class 2: Jan 24</a></li>
                 <li><a href="class-01.html">Class 1: Jan 21</a></li>
             </ul>
@@ -34,7 +35,7 @@ htmlHeader = '''
 '''
 
 htmlFooter = '''  
-        </div class="wrapper">
+        </div>
     </section>
     
     <footer>
@@ -98,14 +99,77 @@ class01 = '''
 class02 = '''
         <h3>Class 2: Jan 24</h3>
         
+        <h4>Goal:</h4>
+        <p>Discuss clients vs. servers and what exactly happens when you type a url into a browser. 
+        <p>Show off web inspector -- mess with sites.</p>
+        <p>Introdocue lists, web navigation, and structure.</p>
+        
         <h4>Due:</h4>
         <p>IS Form</p>
         
+        <h4>Homework:</h4>
+        <p>Modify the nav/menu and think about how to organize portfolio website (with JS and animation, minimalism, multiple pages, etc.)</p>
+        
+        <h4>Summary</h4>
+        <ol>
+            <li>Lecture
+                <ul>
+                    <li>Internet vs. Web</li>
+                    <li>Front End/Client Side vs. Back End/Server Side</li>
+                    <li>What is the DOM? Basic DOM structure</li>
+                    <li>Browsers, how they work, what is different about them?</li>
+                    <li>What happens when you enter a URL?</li>
+                </ul></li>
+            <li>Showed off web inspector in Google Chrome
+                <ul>
+                    <li>How to see the front-end structure of a site</li>
+                    <li>How to manipulate CSS styles with inspector</li>
+                    <li>Console gives errors of page, can run script from it, will be useful later</li>
+                </ul></li>
+            <li>In class work:
+                <ul>
+                    <li>List elements, &lt;ol&gt; vs. &lt;ul&gt;
+                    <li>The different types of links
+                        <ul>
+                            <li>To external sites (in current tab vs. new tab)</li>
+                            <li>File in same folder, in subfolder, in parent folder</li>
+                            <li>On page anchors</li>
+                            <li>Mailto</li>
+                            <li>Link place holder (#)</li>
+                        </ul></li>
+                </ul></li>
+            <li>Showed different types of styling in terms of page/site structure and navigation
+                <ul>
+                    <li>Appending all section on one page and jumping to with anchors</li>
+                    <li>Hiding all sections but the active, click link to switch what is active</li>
+                    <li>Having multiple .html pages and using regular links to get to them</li>
+                </ul></li>
+        </ol>
+        
+        <h4>Further Reading:</h4>
+        <p><a href="http://www.whatismyip.com/what-is-an-ip-address/">What is an IP address?</a>
+            <a href="http://css-tricks.com/dom/">The DOM Explained</a> *** (Note, do not worry about DOM manipulation at this time)
+            <a href="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork">How Browsers Work</a>
+            <a href="http://igoro.com/archive/what-really-happens-when-you-navigate-to-a-url">What happens when click a URL?</a></p>
+    
+        <h4>Download In-Class Example:</h4>
+        <p><a href="docs/OWLJan-24-14PowerPoint.pptx">LECTURE POWER POINT</a>
+            <a href="classExample/class2-eg/class2-eg.zip">class2-eg.zip</a></p>
+        
+        <h4>Screencast RECAP session:</h4>
+        <p>(Currently Unavailable)</p>        
+'''
+
+class03 = '''
+        <h3>Class 2: Jan 24</h3>
+        
+        <h4>Due:</h4>
+        <p>N/A, however recommended you have some sort of list with links your site will use.</p>
 '''
 
 
 def generate():
-    allClasses = [class01, class02]
+    allClasses = [class01, class02, class03]
     classCount = len(allClasses)
     for classNum in range(classCount):
         #Make the filename

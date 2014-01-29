@@ -1,9 +1,12 @@
-/* Comment */
 
-nav ol {
-	list-style-type: lower-alpha;
+ul {
+	background: black;
 }
 
-nav ul {
-	list-style-type: none;
+div ul {
+	background: ghostwhite;
+}
+
+div > ul {
+	background: grey;
 }

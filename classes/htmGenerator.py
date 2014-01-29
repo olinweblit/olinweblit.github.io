@@ -24,6 +24,7 @@ htmlHeader = '''
         <menu>
             <!-- FOR CLASS SUMMARY LINKS -->
             <ul>
+                <li><a href="class-04.html">Class 4: Jan 31</a></li>
                 <li><a href="class-03.html">Class 3: Jan 28</a></li>
                 <li><a href="class-02.html">Class 2: Jan 24</a></li>
                 <li><a href="class-01.html">Class 1: Jan 21</a></li>
@@ -161,15 +162,47 @@ class02 = '''
 '''
 
 class03 = '''
-        <h3>Class 2: Jan 24</h3>
+        <h3>Class 3: Jan 24</h3>
         
         <h4>Due:</h4>
         <p>N/A, however recommended you have some sort of list with links your site will use.</p>
+        
+        <h4>Homework:</h4>
+        <p>Modify the nav/menu and think about how to organize portfolio website (with JS and animation, minimalism, multiple pages, etc.)</p>
+        
+        <h4>Summary</h4>
+        <ol>
+            <li>Crash course to CSS (see Power Point below)</li>
+            <li>Tutorial on how to make various navigation bars, such as
+                <ul>
+                    <li>Mimic Twitter bootstrap</li>
+                    <li>DropDown menu Navigation</li>
+                </ul></li>
+        </ol>
+        
+        <h4>Few decent CSS guides:</h4>
+        <p><a href="http://css-tricks.com/snippets/">CSS Tricks</a>
+            <a href="http://line25.com/">CSS Specific Tutorials</a>
+            </p>
+    
+        <h4>Download In-Class Example:</h4>
+        <p><a href="docs/OWLJan-24-14PowerPoint.pptx">CSS POWER POINT</a>
+            <a href="classExample/class3-eg/navStyles.zip">Example Navigation Bars</a></p>
+        
+        <h4>Screencast RECAP session:</h4>
+        <p>(Currently Unavailable)</p>   
+'''
+
+class04 = '''
+        <h3>Class 4: Jan 31</h3>
+        
+        <h4>Due:</h4>
+        <p>Find 3 portfolio websites you like some element of (eg. navigation, project page, layout, etc.)</p>
 '''
 
 
 def generate():
-    allClasses = [class01, class02, class03]
+    allClasses = [class01, class02, class03, class04]
     classCount = len(allClasses)
     for classNum in range(classCount):
         #Make the filename

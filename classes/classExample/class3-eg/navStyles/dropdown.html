@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Navigation Bars and Menus</title>
+		
+		<style>
+			/* 
+			 *  RESET THE BROWSER TO UNIFORM
+			 *  http://meyerweb.com/eric/tools/css/reset/ 
+			 *  v2.0 | 20110126
+			 *  License: none (public domain)
+			*/
+			
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+				background: ghostwhite;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			
+			
+			/** BOOTSTRAP NAV - by Kai Austin **/
+			nav {
+				top: 0;
+				width: 100%;
+				height: auto;
+				text-align: center;
+				background: #eeeeee; /* Old browsers */
+				background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+				background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+				z-index: 1000;
+			}
+			
+			nav h2 {
+				display:inline-block;
+				vertical-align: middle;
+				padding: 0 30px;
+				font-size: 25px;
+				font-weight: 900;
+				color: #000;
+				text-shadow: 2px 1px 7px #FFF;
+			}
+			
+			nav ul {
+				display: inline-table;
+				text-align: center;
+				list-style-type: none;
+			}
+			nav ul li a:hover, nav ul li:hover {
+				color: #FFFFFF;
+				background: #4b545f;
+				background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+				background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+				background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+			}
+			
+			nav > ul li {
+				position:relative;
+				display: inline-block;
+				vertical-align: middle;
+				height: auto;
+			}
+			nav ul ul {
+				display: none;
+				position: absolute;
+				padding: 0;
+				top: 100%;
+				background: #5f6975; 
+				border-radius: 0px;
+				z-index: 1000;
+			}
+			nav ul ul ul {
+				position: absolute;
+				padding: 0;
+				top: 0;
+				left: 100%;
+				z-index: 1000;
+			}
+			
+			nav ul li:hover > ul {
+				display: block;
+				padding: 15px;
+				color: #1F1F1F;
+				text-decoration: none;
+			}
+			
+			nav li a {
+				display: block;
+				padding: 20px 35px;
+				color: #757575;
+				text-decoration: none;
+			}
+			nav ul ul li a{
+				border-top: 1px solid #6b727c;
+				border-bottom: 1px solid #575f6a;
+			}
+			
+			nav ul li:hover a {
+				color: #fff;
+			}
+	
+			nav ul ul li a {
+				padding: 15px 40px;
+				color: #fff;
+			}	
+			nav ul ul li a:hover {
+				background: #4b545f;
+			}
+
+			
+			
+			section {
+				margin: 65px auto;
+				width: 800px;
+				padding: 20px;
+				box-shadow: 0px 7px 20px -2px #8D8D8D;
+			}
+			h1 {
+				margin: 10px auto;
+				font-size: 30px;
+				font-weight: 700;
+				opacity: 0.5;
+				border-bottom: 3px double #000;
+				z-index: 1;
+			}
+			p { padding: 10px; }
+		</style>
+		
+	</head>
+	<body>
+		
+		<nav>
+			<h2>Dropdown Navigation</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#" class="active">About</a>
+					<ul>
+						<li><a href="#">Background</a></li>
+						<li><a href="#">Experience</a></li>
+					</ul></li>
+				<li><a href="#">Skills</a>
+					<ul>
+						<li><a href="#">Web Dev</a></li>
+						<li><a href="#">Engineering</a></li>
+						<li><a href="#">Creative</a>
+							<ul>
+								<li><a href="#">Writing</a></li>
+								<li><a href="#">Art</a></li>
+							</ul></li>
+					</ul>
+				</li>
+				<li><a href="#">Resume</a></li>
+			</ul>
+		</nav>
+		
+		<section>
+			<h1>ABOUT</h1>
+			<p>Sometimes you want to put more in the navigation because there are just too many pages in the world. Here is an example of how you would do it.</p>
+	
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+				
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+				
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+							
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+		</section>
+		
+	</body>
+</html>

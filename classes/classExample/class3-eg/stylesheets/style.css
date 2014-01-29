@@ -1,0 +1,137 @@
+/* 
+ *  RESET THE BROWSER TO UNIFORM
+ *  http://meyerweb.com/eric/tools/css/reset/ 
+ *  v2.0 | 20110126
+ *  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background: ghostwhite;
+}
+ol, ul {
+	list-style: none;
+}
+
+
+/** MY STYLESHEET **/
+nav {
+	top: 0;
+	width: 100%;
+	height: auto;
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+	z-index: 1000;
+}
+
+nav ul {
+	display: inline-table;
+	text-align: center;
+	list-style-type: none;
+}
+
+nav a {
+	color: #8D8D8D;
+	text-decoration: none;
+}
+
+
+nav ul li a:hover, nav ul li:hover {
+	color: #FFFFFF;
+	background: #4b545f;
+	background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+}
+
+nav > ul li {
+	position: relative;
+	padding: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	height: auto;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	padding: 0;
+	top: 100%;
+	background: #5f6975; 
+	border-radius: 0px;
+	z-index: 1000;
+}
+
+nav ul ul ul {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 1000;
+}
+
+nav ul li:hover > ul {
+	display: block;
+	padding: 15px;
+	color: #1F1F1F;
+	text-decoration: none;
+}
+
+nav li a {
+	display: block;
+	padding: 20px 35px;
+	color: #757575;
+	text-decoration: none;
+}
+
+nav ul ul li a{
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a;
+}
+
+nav ul li:hover a {
+	color: #fff;
+}
+
+nav ul ul li a {
+	padding: 15px 40px;
+	color: #fff;
+}	
+nav ul ul li a:hover {
+	background: #4b545f;
+}
+
+section {
+	width: 500px;
+	margin: 100px auto;
+}

@@ -186,7 +186,7 @@ class03 = '''
             </p>
     
         <h4>Download In-Class Example:</h4>
-        <p><a href="docs/OWLJan-24-14PowerPoint.pptx">CSS POWER POINT</a>
+        <p><a href="docs/OWLJan-28-14-CSS2Know.pptx">CSS POWER POINT</a>
             <a href="classExample/class3-eg/navStyles.zip">Example Navigation Bars</a></p>
         
         <h4>Screencast RECAP session:</h4>

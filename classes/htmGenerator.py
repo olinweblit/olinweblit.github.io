@@ -24,6 +24,7 @@ htmlHeader = '''
         <menu>
             <!-- FOR CLASS SUMMARY LINKS -->
             <ul>
+                <li><a href="class-04.html">Class 5: Feb 4</a></li>
                 <li><a href="class-04.html">Class 4: Jan 31</a></li>
                 <li><a href="class-03.html">Class 3: Jan 28</a></li>
                 <li><a href="class-02.html">Class 2: Jan 24</a></li>
@@ -198,11 +199,33 @@ class04 = '''
         
         <h4>Due:</h4>
         <p>Find 3 portfolio websites you like some element of (eg. navigation, project page, layout, etc.)</p>
+
+        <h4>Homework:</h4>
+        <p>Sketch a wireframe of your portfolio website.</p>
+        
+        <h4>Summary:</h4>
+        <ol>
+            <li>Went over wireframes, site maps, & content maps.</li>
+            <li> Split up into teams of 3-4 people.
+                <ul>
+                    <li>Made wireframes & site maps of websites of choice</li>
+                    <li>Presented website, its design, what it was, good/bad, etc.</li>
+                </ul></li>
+        </ol>
+
+'''
+
+class05 = '''
+    <h3>Class 5: Feb 4</h3>
+    
+    <h4>Homework:</h4>
+    <p>Wireframe Sketch</p>
+    
 '''
 
 
 def generate():
-    allClasses = [class01, class02, class03, class04]
+    allClasses = [class01, class02, class03, class04, class05]
     classCount = len(allClasses)
     for classNum in range(classCount):
         #Make the filename

@@ -215,6 +215,9 @@ section#crew-section .wrapper {
 	padding-top: 20px;
 	text-align: center;
 }
+.wrapper div p {
+	text-align: left;
+}
 section#crew-section img {
 	width: 150px;
 	height: 150px;

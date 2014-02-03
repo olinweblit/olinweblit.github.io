@@ -24,7 +24,7 @@ htmlHeader = '''
         <menu>
             <!-- FOR CLASS SUMMARY LINKS -->
             <ul>
-                <li><a href="class-04.html">Class 5: Feb 4</a></li>
+                <li><a href="class-05.html">Class 5: Feb 4</a></li>
                 <li><a href="class-04.html">Class 4: Jan 31</a></li>
                 <li><a href="class-03.html">Class 3: Jan 28</a></li>
                 <li><a href="class-02.html">Class 2: Jan 24</a></li>

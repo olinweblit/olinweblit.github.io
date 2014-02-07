@@ -24,7 +24,8 @@ htmlHeader = '''
         <menu>
             <!-- FOR CLASS SUMMARY LINKS -->
             <ul>
-                <li><a href="class-04.html">Class 5: Feb 4</a></li>
+                <li><a href="class-06.html">Class 6: Feb 7</a></li>
+                <li><a href="class-05.html">Class 5: Feb 4</a></li>
                 <li><a href="class-04.html">Class 4: Jan 31</a></li>
                 <li><a href="class-03.html">Class 3: Jan 28</a></li>
                 <li><a href="class-02.html">Class 2: Jan 24</a></li>
@@ -155,7 +156,7 @@ class02 = '''
             <a href="http://igoro.com/archive/what-really-happens-when-you-navigate-to-a-url">What happens when click a URL?</a></p>
     
         <h4>Download In-Class Example:</h4>
-        <p><a href="docs/OWLJan-24-14PowerPoint.pptx">LECTURE POWER POINT</a>
+        <p><a href="../docs/OWLJan-24-14PowerPoint.pptx">LECTURE POWER POINT</a>
             <a href="classExample/class2-eg/class2-eg.zip">class2-eg.zip</a></p>
         
         <h4>Screencast RECAP session:</h4>
@@ -187,7 +188,7 @@ class03 = '''
             </p>
     
         <h4>Download In-Class Example:</h4>
-        <p><a href="docs/OWLJan-28-14-CSS2Know.pptx">CSS POWER POINT</a>
+        <p><a href="../docs/OWLJan-28-14-CSS2Know.pptx">CSS POWER POINT</a>
             <a href="classExample/class3-eg/navStyles.zip">Example Navigation Bars</a></p>
         
         <h4>Screencast RECAP session:</h4>
@@ -218,14 +219,41 @@ class04 = '''
 class05 = '''
     <h3>Class 5: Feb 4</h3>
     
-    <h4>Homework:</h4>
+    <h4>Due:</h4>
     <p>Wireframe Sketch</p>
     
+    <h4>Summary</h4>
+    <ol>
+        <li>Talk about wireframes and personal sites.</li>
+        <li>Start coding.</li>
+    </ol>
+    
+'''
+
+class06 = '''
+    <h3>Class 6: Feb 7</h3>
+    
+    <h4>Due:</h4>
+    <p>Readings</p>
+    
+    <h4>Homework:</h4>
+    <p>Get at least 3 projects for your portfolio website</p>
+    
+    <h4>Summary:</h4>
+    <ol>
+        <li>Went over web hosting</li>
+        <li>Overview of Portfolio Content (see power point)</li>
+        <li>Intro to CSS3 animation</li>
+        <li>Class work time</li>
+    </ol>
+    
+    <h4>Power Points:</h4>
+    <p><a href="../docs/OWLFeb-7-14PortfolioContent.pptx">What to put in a Portfolio</a></p>
 '''
 
 
 def generate():
-    allClasses = [class01, class02, class03, class04, class05]
+    allClasses = [class01, class02, class03, class04, class05, class06]
     classCount = len(allClasses)
     for classNum in range(classCount):
         #Make the filename

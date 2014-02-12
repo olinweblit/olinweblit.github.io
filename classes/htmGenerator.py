@@ -24,6 +24,8 @@ htmlHeader = '''
         <menu>
             <!-- FOR CLASS SUMMARY LINKS -->
             <ul>
+                <li><a href="class-08.html">Class 8: Feb 14</a></li>
+                <li><a href="class-07.html">Class 7: Feb 11</a></li>
                 <li><a href="class-06.html">Class 6: Feb 7</a></li>
                 <li><a href="class-05.html">Class 5: Feb 4</a></li>
                 <li><a href="class-04.html">Class 4: Jan 31</a></li>
@@ -251,9 +253,44 @@ class06 = '''
     <p><a href="../docs/OWLFeb-7-14PortfolioContent.pptx">What to put in a Portfolio</a></p>
 '''
 
+class07 = '''
+    <h3>Class 7: Feb 11</h3>
+    
+    <h4>Due:</h4>
+    <p>Get at least 3 projects for your portfolio website.</p>
+    
+    <h4>Homework:</h4>
+    <p>Get at least 3 projects for your portfolio website</p>
+    
+    <h4>Summary:</h4>
+    <ol>
+        <li>Photoshop Tutorial</li>
+    </ol>
+'''
+
+class08 = '''
+    <h3>Class 8: Feb 14</h3>
+    
+    <h4>Due:</h4>
+    <p>Portfolio first-pass by end of class</p>
+    
+    <p>You will be turning in a link (spreadsheet to be provided) to your website and a screenshot of your landing page. I will be linking your website on the main OWL website. The main idea is that you have something to show, that you can walk up to someone at a career fair and not be afraid to give them your link. It does not need to be fancy - I am not expecting animation or the most beautiful color scheme in the world.</p>
+    <p>
+        Specifically what we are looking for:
+        <ol>
+            <li>Basic, clean layout</li>
+            <li>Landing page</li>
+            <li>About you, Contact info, etc.</li>
+            <li>At least 3 projects with image + appropriate description</li>
+            <li>Brownie Points for </li>
+        </ol>
+        You might want to scan over the "What to put in a Portfolio" powerpoint (Class 6)
+    </p>
+'''
+
 
 def generate():
-    allClasses = [class01, class02, class03, class04, class05, class06]
+    allClasses = [class01, class02, class03, class04, class05, class06, class07, class08]
     classCount = len(allClasses)
     for classNum in range(classCount):
         #Make the filename

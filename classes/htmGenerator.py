@@ -24,6 +24,8 @@ htmlHeader = '''
         <menu>
             <!-- FOR CLASS SUMMARY LINKS -->
             <ul>
+                <li><a href="class-10.html">Class 10: Feb 25</a></li>
+                <li><a href="class-09.html">Class 9: Feb 21</a></li>
                 <li><a href="class-08.html">Class 8: Feb 14</a></li>
                 <li><a href="class-07.html">Class 7: Feb 11</a></li>
                 <li><a href="class-06.html">Class 6: Feb 7</a></li>
@@ -288,9 +290,30 @@ class08 = '''
     </p>
 '''
 
+class09 = '''
+    <h3>Class 9: Feb 21</h3>
+    
+    <h4>Goal:</h4>
+    <p>Crash course to raw javascript.</p>
+    
+    <h4>Summary:</h4>
+    <p>Tutorial to build a CSS art tree with changing leaves over time via Javascript.</p>
+    
+    <h3>Links & Downloads:</h3>
+    <p><a href="classExample/class9-eg/tree.htm>Live example</a></p>
+    <p><a href="classExample/class9-eg/tree_pack.zip">In class tutorial result</a></p>
+'''
+
+class10 = '''
+    <h3>Class 10: Feb 25</h3>
+    
+    <h4>Goal:</h4>
+    <p>Introduction to jQuery and making awesome stuff with it.</p>
+'''
+
 
 def generate():
-    allClasses = [class01, class02, class03, class04, class05, class06, class07, class08]
+    allClasses = [class01, class02, class03, class04, class05, class06, class07, class08, class09, class10]
     classCount = len(allClasses)
     for classNum in range(classCount):
         #Make the filename

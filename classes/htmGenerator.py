@@ -14,7 +14,6 @@ htmlHeader = '''
                 <li class="title"><a href="../index.html">OWL</a></li>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../students.html">Announcements</a></li>
-                <li><a href="../resources.html">Resources</a></li>
                 <li><a href="../schedule.html">Schedule</a></li>
                 <li><a href="../docs/OWLit Syllabus.pdf">Syllabus</a></li>
                 <li class="rightover"><a href="mailto:olinweblit@lists.olin.edu">QUESTIONS</a></li>
@@ -24,6 +23,7 @@ htmlHeader = '''
         <menu>
             <!-- FOR CLASS SUMMARY LINKS -->
             <ul>
+                <li><a href="class-11.html">Class 11: Feb 28</a></li>
                 <li><a href="class-10.html">Class 10: Feb 25</a></li>
                 <li><a href="class-09.html">Class 9: Feb 21</a></li>
                 <li><a href="class-08.html">Class 8: Feb 14</a></li>
@@ -162,9 +162,7 @@ class02 = '''
         <h4>Download In-Class Example:</h4>
         <p><a href="../docs/OWLJan-24-14PowerPoint.pptx">LECTURE POWER POINT</a>
             <a href="classExample/class2-eg/class2-eg.zip">class2-eg.zip</a></p>
-        
-        <h4>Screencast RECAP session:</h4>
-        <p>(Currently Unavailable)</p>        
+              
 '''
 
 class03 = '''
@@ -193,10 +191,7 @@ class03 = '''
     
         <h4>Download In-Class Example:</h4>
         <p><a href="../docs/OWLJan-28-14-CSS2Know.pptx">CSS POWER POINT</a>
-            <a href="classExample/class3-eg/navStyles.zip">Example Navigation Bars</a></p>
-        
-        <h4>Screencast RECAP session:</h4>
-        <p>(Currently Unavailable)</p>   
+            <a href="classExample/class3-eg/navStyles.zip">Example Navigation Bars</a></p> 
 '''
 
 class04 = '''
@@ -299,7 +294,7 @@ class09 = '''
     <h4>Summary:</h4>
     <p>Tutorial to build a CSS art tree with changing leaves over time via Javascript.</p>
     
-    <h3>Links & Downloads:</h3>
+    <h4>Links & Downloads:</h4>
     <p><a href="classExample/class9-eg/tree.htm>Live example</a></p>
     <p><a href="classExample/class9-eg/tree_pack.zip">In class tutorial result</a></p>
 '''
@@ -308,20 +303,46 @@ class10 = '''
     <h3>Class 10: Feb 25</h3>
     
     <h4>Goal:</h4>
-    <p>Introduction to jQuery and making awesome stuff with it.</p>
+    <p>Introduction to jQuery and making awesome stuff with it. Getting a hand on the mouthful of words related to full stack development.</p>
+
+    <h4>Summary</h4>
+    <ol>
+        <li> Overview of what is Javascript, libraries, and frameworks.</li>
+        <li> Introduction to the backend, databases, etc. and the full stack.</li>
+    </ol>
+
+    <h4>Links & Downloads</h4>
+    <p><a href="docs/OWLFeb-25-14CrashCourseToWords.pptx">Lecture Power Point</a></p>
 '''
 
+class11 = '''
+    <h3>Class 11: Feb 28</h3>
+    
+    <h4>Goal</h4>
+    <p>Working with jQuery and Firebase.</p>
+
+    <h4>Summary</h4>
+    <ol>
+        <li> Mini-pop quiz to remodel example page and make a form. </li>
+        <li> Enter in data and push to Firebase.</li>
+        <li> Pull data from Firebase and display on page.</li>
+    </ol>
+
+    <h4>Links & Downloads</h4>
+    <p><a href="classExample/class11/example.html">Bad Chat Live</a></p>
+    <p><a href="classExample/class11/class11-eg.zip">Bad Chat Download</a></p>
+'''
 
 def generate():
-    allClasses = [class01, class02, class03, class04, class05, class06, class07, class08, class09, class10]
+    allClasses = [class01, class02, class03, class04, class05, class06, class07, class08, class09, class10, class11]
     classCount = len(allClasses)
     for classNum in range(classCount):
         #Make the filename
         toName = "class-"
-        if classNum < 10:
+        if classNum < 9:
             toName = toName + "0" + str(classNum + 1)
         else:
-            toName = toName + str(classNum) 
+            toName = toName + str(classNum+1) 
         filename = '%s.html' %toName
         f = open(filename, 'w')
         f.write(htmlHeader)

@@ -1,0 +1,57 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+	text-align: right;
+}
+nav button {
+	display: none;
+}
+
+
+#details {
+	padding: 0 20px;
+}
+
+
+#message-box, #settings-box {
+	position: absolute;
+	display: none;
+	right: 100px;
+	margin: 20px auto;
+	width: 300px;
+	padding: 20px;
+	font-size: 18px;
+	border: 1px #000 solid;
+	border-radius: 5px;
+}
+
+#message-box button, #settings-box button {
+	display: block;
+	margin: 20px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+#message-box.inbox {
+	width: 200px;
+	border: none;
+}
+#message-box.inbox h3 {
+	font-size: 12px;
+	font-weight: 700;
+	opacity: 0.5;
+}
+#message-box.inbox p {
+	margin: 2px;
+	padding-bottom: 10px;
+	font-size: 15px;
+	border-bottom: 1px solid #000;
+}
+
+#message-box textarea, #settings-box textarea {
+	resize:none;
+	width: 280px;
+	height: 100px;
+}

@@ -23,6 +23,8 @@ htmlHeader = '''
         <menu>
             <!-- FOR CLASS SUMMARY LINKS -->
             <ul>
+                <li><a href="class-11.html">Class 13: March 7</a></li>
+                <li><a href="class-11.html">Class 12: March 4</a></li>
                 <li><a href="class-11.html">Class 11: Feb 28</a></li>
                 <li><a href="class-10.html">Class 10: Feb 25</a></li>
                 <li><a href="class-09.html">Class 9: Feb 21</a></li>
@@ -333,8 +335,51 @@ class11 = '''
     <p><a href="classExample/class11/class11-eg.zip">Bad Chat Download</a></p>
 '''
 
+class12 = '''
+    <h3>Class 12: March 4</h3>
+    
+    <h4>Goal</h4>
+    <p>Catch up, answer questions, etc.</p>
+
+    <h4>Summary</h4>
+    <p>Work day. Nothing special.</p>
+'''
+
+class13 = '''
+    <h3>Class 13: March 7</h3>
+    
+    <h4>Goal</h4>
+    <p>Making MyFaceSpace by using Firebase database and Facebook API.</p>
+
+    <h4>Summary</h4>
+    <ol>
+        <li> Ensure have Firebase account and Facebook developer account </li>
+        <li> Set up
+            <ul> <li> Make Firebase database </li>
+                <li> Create a new app on Facebook </li>
+                <li> In Firebase simple login tab, add in Facebook app ID and secret (from about) and enable the login </li>
+                <li> Set up Firebase database rules (who can read/write info) so that only users who are logged in with facebook can access. This is fairly unique to Firebase. Read API/Documentation</li>
+                </ul>
+            </li>
+        <li> Set up basic html page with login, logout, and settings, button, a section with an empty tag for name and about, a div with a textarea and submit button with will allow the user to submit a new/update "About" section. </li>
+        <li> Set up Firebase AJAX log in handler. </li>
+        <li> Set up login button to log in with facebook (include permissions) </li>
+        <li> Set up logout button, because they're useful </li>
+        <li> With Facebook API communication set up, pull the Facebook display name to show up on our page. </li>
+        <li> Settings button, open and close settings div </li>
+        <li> Allow form submission and send results to the Firebase database </li>
+        <li> Pull about section data and display on page. May also want to pull it to display in form textarea as well (think about why).</li>
+        <li>Further Exploration: Make the app look nice, add more options like change background color as specified by user, etc.</li>
+    </ol>
+
+    <h4>Links & Downloads</h4>
+    <p><a href="classExample/class13/example.html">Clunky MyFaceSpace</a></p>
+    <p><a href="classExample/class13/class13-eg.zip">MyFaceSpace Download</a></p>
+'''
+
+
 def generate():
-    allClasses = [class01, class02, class03, class04, class05, class06, class07, class08, class09, class10, class11]
+    allClasses = [class01, class02, class03, class04, class05, class06, class07, class08, class09, class10, class11, class12, class13]
     classCount = len(allClasses)
     for classNum in range(classCount):
         #Make the filename
